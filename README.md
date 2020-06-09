@@ -4,13 +4,13 @@ How I set up a new arch VM using qemu MBR BIOS
 # Instructions:
 All instructions assume you are running Arch Linux, you will need to change the pacman -Syu to apt or yum commands depending on your host distro.
 
-# Get this repository
+## Get this repository
 ```shell
 $ git clone git@github.com:poshaw/installArch.git
 $ cd installArch/
 ```
 
-# Make the Arch.iso
+## Make the Arch.iso
 Update user variable in first line of makeISO.sh
 ```shell
 $ vi makeISO.sh
@@ -40,7 +40,7 @@ and the qemu virtual machine launch scripts:
 /home/${user}/bin/vmarch
 /home/${user}/bin/ISO_vmarch
 ```
-# Launch the VM
+## Launch the VM
 ```shell
 $ sudo pacman -S qemu
 $ ~/bin/ISO_vmarch
