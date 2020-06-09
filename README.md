@@ -39,4 +39,9 @@ and the qemu virtual machine launch scripts:
 /home/${user}/bin/vmarch
 /home/${user}/bin/ISO_vmarch
 ```
+# Launch the VM
+```shell
+$ sudo pacman -S qemu
+$ ~/bin/ISO_vmarch
+```
 
