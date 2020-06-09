@@ -9,7 +9,7 @@ Update user variable in first line of makeISO.sh
 ```bash
 # vi makeISO.sh
 ```
-```bash
+```terminal
 user=userName
 ```
 
