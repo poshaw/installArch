@@ -7,13 +7,13 @@ All instructions assume you are running Arch Linux, you will need to change the 
 # Make the Arch.iso
 Update user variable in first line of makeISO.sh
 ```bash
-# vi makeISO.sh
+$ vi makeISO.sh
 ```
-```terminal
+```shell
 user=userName
 ```
 
 run makeISO.sh
-```bash
-sudo makeISO.sh
+```shell
+# sudo makeISO.sh
 ```
