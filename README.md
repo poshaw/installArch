@@ -26,6 +26,7 @@ $ sudo makeISO.sh
 ```
 
 You should now have the following files in your home directory:
+
 The .iso:
 ```shell
 /home/${user}/downloads/iso/arch.iso
