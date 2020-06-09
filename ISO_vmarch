@@ -1,0 +1,11 @@
+#! /bin/bash
+
+qemu-system-x86_64 \
+	-m 8G \
+	-boot d \
+	-enable-kvm \
+	-cpu host \
+	-smp 2 \
+	-net nic -net user \
+	-drive format=raw,file=${HOME}/vm/arch/disk0.img,index=0,if=virtio \
+	-drive file=${HOME}/downloads/iso/arch.iso,index=2,media=cdrom,readonly
