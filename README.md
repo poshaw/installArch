@@ -1,7 +1,7 @@
 # installArch
 How I set up a new arch VM using qemu MBR BIOS
 
-# Instructions:
+## Instructions:
 All instructions assume you are running Arch Linux, you will need to change the pacman -Syu to apt or yum commands depending on your host distro.
 
 ## Get this repository

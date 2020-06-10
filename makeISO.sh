@@ -18,7 +18,6 @@ rm -rf ${startdir}/archlive
 cp -r /usr/share/archiso/configs/releng ${startdir}/archlive
 
 echo "neovim" >> ${startdir}/archlive/packages.x86_64
-echo "reflector" >> ${startdir}/archlive/packages.x86_64
 
 # add scripts
 mkdir -p ${startdir}/archlive/airootfs/etc/skel
