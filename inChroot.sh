@@ -16,7 +16,7 @@ echo varch > /etc/hostname
 echo -e "127.0.0.1 localhost\n::1 localhost" >> /etc/hosts
 
 echo -e "\n\nInstall packages"
-pacman -Syu --noconfirm neovim sudo dhcpcd grub xorg-xinit xorg git
+pacman -Syu --noconfirm neovim sudo dhcpcd grub xorg-xinit xorg git wget ttf-ubuntu-font-family pkgfile gcr webkit2gtk xorg-xprop ca-certificates curl mpv
 
 # use sed to uncomment wheel group from sudoers
 sed 's/# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/g' /etc/sudoers > /etc/sudoers.new
