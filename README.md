@@ -46,3 +46,47 @@ $ sudo pacman -S qemu
 $ ~/bin/ISO_vmarch
 ```
 
+
+## Install some software from suckless
+install X server & git
+```shell
+# sudo -i
+# pacman -S xorg-xinit xorg git
+```
+
+change directory to /usr/src because you want this to apply to all users
+```shell
+# cd /usr/src
+```
+
+clone suckless software such as dwm (window manager), st (recommended terminal), and dmenu (simple application menu)
+
+```shell
+# git clone git://git.suckless.org/dwm
+# git clone git://git.suckless.org/st
+# git clone git://git.suckless.org/dmenu
+# git clone git://git.suckless.org/surf
+```
+
+change directory into each one, and compile them
+
+```shell
+# cd dwm
+# make clean install
+```
+return to normal user
+```shell
+# exit
+```
+```shell
+$ nvim ~/.xinitrc
+```
+add the following line, save & quit
+```bash
+exec dwm
+```
+
+start your session with:
+```shell
+$ startx
+```
